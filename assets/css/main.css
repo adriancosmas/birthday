@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700;800&display=swap");
+html {
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: black !important;
+}
+
+.infoProduct__productName {
+  font-family: "Rubik", sans-serif;
+  font-size: 4.236rem !important;
+  color: #0a0a0a;
+}
+.infoProduct__productDtlname {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem !important;
+  color: #0a0a0a;
+  font-weight: 300;
+}
+.infoProduct__historyProduct {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  color: #0a0a0a;
+  font-weight: 500;
+}
+.infoProduct__colorProduct {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  color: #0a0a0a;
+  font-weight: 700;
+}
+.infoProduct__colorText {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.618rem;
+  color: #0a0a0a;
+}
+.infoProduct__Hinfo {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  color: #0a0a0a;
+  font-weight: 100;
+}
+.infoProduct__Hdesk {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  color: #0a0a0a;
+}
+.infoProduct__Htab {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev {
+  left: 0;
+  z-index: 2;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  z-index: 1;
+}
+
+.slick-slider {
+  width: 750px;
+}
+
+.hero-slider {
+  display: flex;
+  justify-content: center;
+}
+.hero-slider__textContainer {
+  left: 55%;
+  top: 35%;
+  position: absolute;
+}
+.hero-slider__title {
+  font-family: "Rubik", sans-serif;
+  font-size: 4.236rem;
+  color: #FFFFFF;
+  font-weight: 800;
+  margin: 0;
+}
+.hero-slider__text {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.618rem;
+  color: #FFFFFF;
+  font-weight: 300;
+  margin: 0;
+}
+.hero-slider__info {
+  font-family: "Rubik", sans-serif;
+  font-size: 0.618rem;
+  color: #FFFFFF;
+  font-weight: 300;
+  margin: 0;
+}
+.hero-slider__img {
+  width: 750px !important;
+  height: 750px;
+}
+
+.whatsApp {
+  position: fixed;
+  bottom: 70px;
+  right: 42px;
+  font-size: 3em;
+  z-index: 3;
+  height: 20px;
+  width: 50px;
+  text-align: center;
+  margin-bottom: 90px;
+}
+.whatsApp i {
+  background-color: #25D366;
+  font-size: 35px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #FFF;
+  padding-top: 6px;
+}
+
+.backToTop {
+  display: none;
+  position: fixed;
+  bottom: 70px;
+  right: 50px;
+  font-size: 3em;
+  z-index: 9999;
+  height: 20px;
+  width: 50px;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.backToTop i {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  color: #33F3EF;
+  background: radial-gradient(at center, #FFF 50%, transparent 50%);
+}
+.backToTop i:hover {
+  color: #0a0a0a;
+  transition: 0.5s ease;
+}
+
+.partner {
+  display: flex;
+  flex-direction: column;
+}
+.partner__container {
+  align-self: center;
+}
+.partner__container .partner__tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  margin-top: 10%;
+  left: 50%;
+  margin-left: -60px;
+  transition: 0.5s ease-in-out;
+}
+.partner__container:hover .partner__tooltip {
+  visibility: visible;
+  transition: 0.5s ease-in-out;
+}
+
+img.partner__img {
+  filter: grayscale(100%);
+}
+img.partner__img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  transition: 0.5s ease-in-out;
+}
+
+.itemLogo {
+  margin-left: 1.618rem;
+}
+
+.navbarMenu {
+  margin-right: 1.618rem;
+}
+
+.heading {
+  font-size: 1.618rem !important;
+  line-height: 5px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: #0a0a0a;
+  letter-spacing: 0;
+}
+
+.fontProduk {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.618rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin: 0;
+}
+.fontProduk:hover {
+  color: #33F3EF;
+  transition: 0.5s ease-in-out;
+}
+
+hr {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  border-top: 1px solid #eee !important;
+  background-color: transparent !important;
+}
+
+@media screen and (max-width: 1024px) {
+  a.navbar-item:hover {
+    color: #33F3EF !important;
+  }
+
+  a.navbar-link:hover {
+    color: #33F3EF !important;
+  }
+
+  .fontProduk {
+    font-size: 1.618rem;
+  }
+
+  .sectionImg {
+    background-image: url(../img/sticker8.png) !important;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+
+  .itemLogo {
+    width: 125px;
+    height: auto;
+    margin-left: 0px;
+  }
+}
+.border {
+  border: 1px solid black;
+}
+
+.categoryImg {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.categoryImgKarpeDasar {
+  width: 325px !important;
+  height: 200px !important;
+}
+
+.categoryName {
+  text-align: center;
+}
+
+.fontProdukdtl {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  color: #0a0a0a !important;
+  font-weight: 500;
+  margin: 0;
+}
+
+.bacgroundColorcategory {
+  background-image: linear-gradient(to right, white, #646262, #0a0a0a, #0a0a0a);
+  -webkit-transition: box-shadow 0.6s ease-out;
+}
+
+.bacgroundColorcategory:hover {
+  box-shadow: 1px 8px 20px grey;
+  -webkit-transition: box-shadow 0.6s ease-in;
+}
+
+.sectionColor {
+  background-color: #FBFBFD;
+}
+
+.colorInfo {
+  font-size: 0.8rem;
+}
+
+.featureIcon {
+  color: white;
+}
+
+.sectionImg {
+  background-image: url(../img/sticker4.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.featureFontcolorTitle {
+  color: white !important;
+  font-size: 1.618rem !important;
+}
+
+.featureFontcolorSubtitle {
+  color: white !important;
+  font-size: 1rem !important;
+}
+
+.imgFrame {
+  border-radius: 50%;
+}
+
+.title {
+  font-family: "Rubik", sans-serif !important;
+  font-size: 4.236rem;
+}
+
+.judul {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.618rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+a, a:hover, a:focus, a:active {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  -khtml-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  text-decoration: none !important;
+}
+
+.footerHeader {
+  color: white !important;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.footerContent {
+  color: white !important;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.footerlogo {
+  width: auto;
+  height: 150px;
+}
+
+.footerHeight {
+  padding: 0.5em 0.75em;
+}
+
+.menu-list a:hover {
+  color: black !important;
+}
+
+/*# sourceMappingURL=main.css.map */
