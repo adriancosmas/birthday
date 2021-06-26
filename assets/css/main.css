@@ -67,10 +67,20 @@ body {
 .slick-next {
   right: 0;
 }
+@media screen and (max-width: 600px) {
+  .slick-next {
+    right: 10px;
+  }
+}
 
 .slick-prev {
   left: 0;
   z-index: 2;
+}
+@media screen and (max-width: 600px) {
+  .slick-prev {
+    left: 10px;
+  }
 }
 
 .slick-prev:before,
@@ -80,6 +90,11 @@ body {
 
 .slick-slider {
   width: 750px;
+}
+@media screen and (max-width: 600px) {
+  .slick-slider {
+    width: 400px;
+  }
 }
 
 .hero-slider {
@@ -115,6 +130,12 @@ body {
 .hero-slider__img {
   width: 750px !important;
   height: 750px;
+}
+@media screen and (max-width: 600px) {
+  .hero-slider__img {
+    width: 400px !important;
+    height: 400px;
+  }
 }
 
 .whatsApp {

@@ -94,11 +94,19 @@ body{
 }
 
 .slick-next{
-  right:0
+  right:0;
+
+  @media screen and (max-width: 600px) {
+    right:10px;
+  }
 }
 
 .slick-prev{
   left:0;
+  
+  @media screen and (max-width: 600px) {
+    left:10px;
+  }
   z-index: 2;
 }
 
@@ -110,6 +118,10 @@ body{
 
 .slick-slider{
   width: 750px;
+
+  @media screen and (max-width: 600px) {
+    width: 400px;
+  }
   // margin: 0 auto;
 }
 
@@ -148,7 +160,11 @@ body{
   }
 
   &__img{
-    // width: 650px !important;
+    @media screen and (max-width: 600px) {
+      width:  400px !important;
+      height: 400px;
+    }
+
     width: 750px !important;
     height: 750px;
   }
