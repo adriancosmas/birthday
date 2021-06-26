@@ -2,6 +2,7 @@ $('.single-item').slick({
   dots: false,
   speed: 500,
   slidesToShow: 1,
+  infinite: false,
   centerMode: true,
   variableWidth: true,
   arrows: true
